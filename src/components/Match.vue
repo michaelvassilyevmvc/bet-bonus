@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div
+    class="flex flex-row justify-center items-center overflow-hidden rounded-lg shadow-lg mb-4 border gap-5"
+  >
     <Card :opponent="match[0]" />
     <div>
       <svg
@@ -22,6 +24,7 @@
 </template>
 
 <script setup>
+import Card from "./Card.vue";
 defineProps({
   match: Object,
   required: true,
