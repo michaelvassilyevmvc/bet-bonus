@@ -12,6 +12,10 @@ export function createRandomOpponent() {
   };
 }
 
-Array.from({ length: 5 }).forEach(() => {
-  MATCHES.push([createRandomOpponent(), createRandomOpponent()]);
+Array.from({ length: 1 }).forEach(() => {
+  MATCHES.push({
+    id: faker.datatype.uuid(),
+    opponent1: createRandomOpponent(),
+    opponent2: createRandomOpponent(),
+  });
 });

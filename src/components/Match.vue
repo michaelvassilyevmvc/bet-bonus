@@ -1,8 +1,8 @@
 <template>
   <div
-    class="flex flex-row justify-center items-center overflow-hidden rounded-lg shadow-lg mb-4 border gap-5"
+    class="flex flex-row justify-center items-center overflow-hidden rounded-lg shadow-lg mb-4 border gap-5 w-fit"
   >
-    <Card :opponent="match[0]" />
+    <Card :opponent="match.opponent1" />
     <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@
         />
       </svg>
     </div>
-    <Card :opponent="match[1]" />
+    <Card :opponent="match.opponent2" />
   </div>
 </template>
 
