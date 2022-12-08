@@ -1,5 +1,10 @@
-<script setup></script>
+<script setup>
+import { RouterLink, RouterView } from "vue-router";
+</script>
 
 <template>
-  <h1 class="text-red-500 font-bold text-3xl">Hello</h1>
+  <div>
+    <RouterLink to="/" active-class="text-green-500">Home</RouterLink>
+  </div>
+  <RouterView />
 </template>
